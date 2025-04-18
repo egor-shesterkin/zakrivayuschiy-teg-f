@@ -127,6 +127,10 @@
   filter: blur(0.3rem);
 }
 
+.hue-rotate {
+  filter: hue-rotate(26deg);
+}
+
 .invert {
   filter: invert(0.7);
 }
@@ -141,6 +145,10 @@
 
 .contrast {
   filter: contrast(20%);
+}
+
+.mixed {
+  filter: opacity(0.9) contrast(0.5) hue-rotate(57deg);
 }
 
 .post-content {
