@@ -160,7 +160,12 @@
 }
 
 .post-text {
-  font-size: 18px;
+  font-size: var(--header-font-size);
+  color: var(--themes-main-color, #000);
+  font-family: var(--main-font), 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 21px; /* 116.667% */
 }
 
 .card__icon-button {
@@ -336,7 +341,6 @@
 }
 
 dialog::backdrop {
-  border: 2px solid var(--themes-main-color, #000);
   opacity: 0.75;
   background: var(--themes-main-color, #000);
 }
@@ -364,9 +368,8 @@ dialog {
 }
 
 .dialog-text {
-  min-width: 234px;
   font-family: var(--accent-font), 'fantasy', sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   font-size: var(--main-font-size);
   font-style: normal;
   line-height: 150%; /* 21px */
@@ -413,15 +416,11 @@ dialog {
   dialog {
     padding-right: 40px;
     padding-left: 40px;
-  }
-
-  .dialog-text {
-    min-width: 198px;
+    min-width: 341px;
   }
 
   .dialog-button {
     min-width: 257px;
-    min-height: 38px;
   }
   
 }
